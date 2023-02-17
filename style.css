@@ -1,0 +1,133 @@
+body {
+	margin: 0 auto;
+	padding: 10% 0;
+	font-style: normal;
+	font-family: "news-gothic-std", sans-serif;
+	font-weight: 400;
+	color: #fff;
+	max-width: 80%;
+	/* Fallback (could use .jpg/.png alternatively) */
+	background-color: #DBC1B3;
+	/* SVG fallback for IE 9 (could be data URI, or could use filter) */
+	background-image: url(fallback-gradient.svg);
+	/* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+	background-image: -webkit-gradient(linear, left top, right top, from(#DBC1B3 ), to(#7f7f7f));
+	/* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image: -webkit-linear-gradient(left, #DBC1B3 , #7f7f7f);
+	/* Firefox 3.6 - 15 */
+	background-image: -moz-linear-gradient(left, #DBC1B3 , #7f7f7f);
+	/* Opera 11.1 - 12 */
+	background-image: -o-linear-gradient(left, #DBC1B3 , #7f7f7f);
+	/* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+	background-image: linear-gradient(to right, #DBC1B3 , #7f7f7f);
+}
+.field {
+	font-size: 0;
+	margin-bottom: 3vw;
+}
+.field label {
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 3vw;
+	padding-bottom: 0px;
+}
+input, select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 0px solid #3f424c;
+	width: 50%;
+	margin-bottom: 0;
+	height: 7vw;
+	float: none;
+	clear: both;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	letter-spacing: 0.6vw;
+	line-height: normal;
+	border-radius: 0px;
+	background: #FFF;
+	color: #7c7c7c;
+	font-size: 2vw;
+	font-family: "news-gothic-std", sans-serif;
+	text-indent: 0;
+	text-transform: lowercase;
+	padding: 0 2.6vw 0 2.6vw;
+	outline: none;
+}
+input::-webkit-input-placeholder {
+	color: #7c7c7c;
+}
+
+input:-moz-placeholder {/* Firefox 18- */
+	color: #7c7c7c;
+	opacity: 1;
+}
+
+input::-moz-placeholder {/* Firefox 19+ */
+	color: #7c7c7c;
+	opacity: 1;
+}
+
+input:-ms-input-placeholder {
+	color: #7c7c7c;
+}
+input:-webkit-autofill, input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0px 0px 0px 10px #FFF inset;
+	background: #FFF !important;
+	-webkit-text-fill-color: #7c7c7c;
+}
+
+div.button{
+	text-align: center;
+}
+div.button a{
+	background: #9a297b;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 13px 31px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+}
+div.button a:hover{
+	background: #7f7f7f;
+}
+div.output{
+	display: none;
+}
+div.output label{
+	background: none #42476a;
+	width: 100%;
+	display: block;	
+	margin: 20px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3vw;
+	font-size: 3vw;
+    padding: 20px 0;	
+}
+@media only screen and (min-width: 768px) {
+
+	body {
+		max-width: 60%;
+	}
+
+	.field label {
+		font-size: 1.7vw;
+	}
+
+	input, select {
+		font-size: 1.25vw;
+		height: 3.54vw;
+		padding-left: 0.9vw;
+		padding-right: 0.9vw;
+		letter-spacing: 0.2vw;
+	}
+}
